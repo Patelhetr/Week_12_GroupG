@@ -142,7 +142,7 @@
         fetch('https://api.ipify.org?format=json')
         .then(Response => Response.json())
         .then(data => {
-            fetch('http://localhost/api/saveIP', {
+            fetch('http://localhost:8081/api/saveIP', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
